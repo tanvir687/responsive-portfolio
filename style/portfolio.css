@@ -217,9 +217,6 @@ footer textarea{
   height: 200px;
 }
 /* Responsive section in media query */
-.hide{
-  display: none;
-}
 @media screen and (max-width:576px) {
   .skill-container,
   .resume-container,
