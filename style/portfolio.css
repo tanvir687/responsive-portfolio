@@ -221,15 +221,29 @@ footer textarea{
   display: none;
 }
 @media screen and (max-width:576px) {
-  .skill-container{
+  .skill-container,
+  .resume-container,
+  .secondary-bg,
+  nav,
+  ul,
+  .about-items,
+  .banner{
     flex-direction: column;
   }
-  .resume-container{
-    flex-direction: column;
-    
+  nav > ul{
+    gap: 20px;
   }
-  .secondary-bg{
-    flex-direction: column;
+  .btn-primary{
+    margin-bottom: 20px;
+  }
+  .header{
+    background-image: none;
+  }
+  .banner{
+    margin: 20px;
+  }
+  .banner-profile-pic{
+    width: 100%;
   }
   footer, .about{
     padding: 20px;
@@ -240,7 +254,5 @@ footer textarea{
   footer input[type="text"], footer input[type="email"], footer textarea{
     width: calc( 100% - 60px );
   }
-  .about-items{
-    flex-direction: column;
-  }
+  
 }
