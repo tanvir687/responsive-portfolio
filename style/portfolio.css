@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+.open-sans-normal {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* sherd style */
+.text-primary {
+  color: rgb(253, 110, 10);
+}
+.btn-primary {
+  border-radius: 5px;
+  background: rgb(253, 110, 10);
+  font-size: 20px;
+  padding: 18px 35px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.section-title {
+  font-size: 35px;
+  font-weight: 700;
+  color: rgb(24, 24, 24);
+}
+.section-description {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(117, 117, 117);
+}
+.secondary-bg {
+  background-color: rgb(255, 248, 243);
+}
+.text-center {
+  text-align: center;
+}
+.description-padding {
+  padding-left: 115px;
+  padding-right: 115px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/* Dark 01 */
+.dark-1 {
+  color: rgb(24, 24, 24);
+}
+/* Dark 02  */
+.dark-2 {
+  color: rgb(71, 71, 71);
+}
+/* Dark 03 */
+.dark-3 {
+  color: rgb(117, 117, 117);
+}
+/* Dark 05 */
+.dark-5 {
+  border: 1px solid rgb(209, 209, 209);
+}
+/* header style  */
+.header {
+  background: url("../images/developer.png"), url("../images/header_bg.png");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+  background-color: rgb(255, 248, 243);
+}
+/* navigation style start */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 200px;
+}
+.nav-title {
+  font-weight: 800;
+  font-size: 45px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 50px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* banner style */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+}
+.banner-content {
+  max-width: 580px;
+}
+.banner-greetings {
+  font-family: 600;
+  font-size: 45px;
+}
+.banner-title {
+  font-size: 85px;
+  font-weight: bold;
+}
+.banner-description {
+  font-size: 18px;
+}
+.banner-profile-pic {
+  width: 584px;
+}
+/* main styles */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+/* about style */
+.about {
+  padding: 130px 150px;
+  text-align: center;
+  border-radius: 10px;
+}
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+.about-title {
+  font-weight: 400;
+  font-size: 20px;
+}
+.about-description {
+  font-weight: 700;
+  font-size: 20px;
+}
+/* skills style  */
+.skill-container {
+  display: flex;
+  gap: 24px;
+  /* max-height: 377px; */
+}
+.skill {
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+}
+.skill-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.skill-description {
+  font-weight: 400;
+  font-size: 16px;
+}
+/* resume section style */
+.resume-container {
+  display: flex;
+  gap: 24px;
+}
+.resume-column-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.experience-title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.experience-sub-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.resume hr {
+  margin: 30px 0px;
+}
+.experience {
+}
+.btn-download-cv{
+  margin-top: 50px;
+}
+/* footer styles part  */
+footer{
+  display: flex;
+  padding: 130px 200px;
+  gap: 100px;
+}
+.footer-column{
+  width: 50%;
+}
+.left-footer-column{
+  display: flex;
+  gap: 21px;
+  flex-direction: column;
+}
+.icon-center{
+  display: flex;
+  gap: 24px;
+}
+footer input[type="text"], footer input[type="email"], footer textarea{
+  height: 64px;
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  display: block;
+}
+footer textarea{
+  height: 200px;
+}
+/* Responsive section in media query */
+.hide{
+  display: none;
+}
+@media screen and (max-width:576px) {
+  .skill-container{
+    flex-direction: column;
+  }
+  .resume-container{
+    flex-direction: column;
+    
+  }
+  .secondary-bg{
+    flex-direction: column;
+  }
+  footer, .about{
+    padding: 20px;
+  }
+  .footer-column{
+    width: 100%;
+  }
+  footer input[type="text"], footer input[type="email"], footer textarea{
+    width: calc( 100% - 60px );
+  }
+}
